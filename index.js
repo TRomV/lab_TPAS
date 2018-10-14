@@ -5,7 +5,7 @@ if(!event) var event = window.event;
 if (event.keyCode) keycode = event.keyCode; // IE
 else if(event.which) keycode = event.which; // all browsers
 
-	switch(keycode){ // проверка нажатых клавиш
+	switch(keycode){ 
 		case 13: ravno(); break;
 		case 46: clear1(); break;
 		case 111: semn('/'); break;
@@ -29,20 +29,20 @@ var b = 0;
 var k = '';
 var znak = false; 
 
-function clear1() { // функция обнуления значений калькулятора
+function clear1() { // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	document.getElementById("window_calc").innerHTML = 0;
 	b = 0; 
 	k = '';
 	znak = false;
 }
 
-function semn(semn) {// функция обработки операции
+function semn(semn) {// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	k = semn;
 	znak = false;
 	b = parseInt(window_calc.innerHTML);
 }
 
-function ravno() {// функция вывода результата
+function ravno() {// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 if(k!=''){		
 	switch(k){
@@ -56,7 +56,7 @@ if(k!=''){
 }
 }
 
-function clic(number) {// функция запоминания веденых значений
+function clic(number) {// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	
 	var window_calc = document.getElementById("window_calc");
 
