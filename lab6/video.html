@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script src="video.js"></script>
+    <title>Video Pleer (Lab6)</title>
+    <link rel="stylesheet" type="text/css" href="video.css" >
+</head>
+<body>
+<div id="pleer">
+    <div>
+        <video id="video" onclick="PlayPause()"></video>
+    </div>
+    <div>
+        <input type="range" id='ratio' onmousedown="clrrange()" onmouseup="movedrange()">
+        <span id="curtime">00:00</span>/<span id="durtime">00:00</span>
+    </div>
+    <div>
+        <input id='file' type="file">
+        <button onclick="changevid()">Open</button>
+        <button id='PlayPause' onclick="PlayPause()">Play</button>
+        <button id='FullScreen' onclick="fullScreen()">FullScreen</button>
+        <input type="range" id = "volume" value="100" min=0 max=100 onmousemove="chvolume()">
+    </div>
+        
+</div>
+</body>
+</html>
